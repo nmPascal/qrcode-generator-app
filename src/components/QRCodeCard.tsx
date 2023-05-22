@@ -1,4 +1,4 @@
-import { FC, LegacyRef, useRef } from "react";
+import { FC } from "react";
 
 import { useQRCodeContextProvider } from "../providers/QRCodeContextProvider";
 import useShareAndDownload from "../hooks/useShareAndDownload";
