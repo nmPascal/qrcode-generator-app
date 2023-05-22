@@ -79,7 +79,9 @@
         .logo__sizes {
             display: flex;
             align-items: center;
+            flex-direction: column;
             justify-content: space-between;
+            @include flex(row, space-between, center);
         }
     }
 
