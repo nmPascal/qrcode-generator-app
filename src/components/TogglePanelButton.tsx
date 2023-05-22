@@ -2,9 +2,9 @@ import { FC } from "react";
 
 import { Button, Tooltip } from "@fluentui/react-components";
 import { Dismiss48Filled, Edit48Regular } from "@fluentui/react-icons";
+import { isPanelOpenAtom } from "../helpers/AtomHelper";
 
 import { useAtom } from "jotai";
-import { isPanelOpenAtom } from "../helpers/AtomHelper";
 
 import styles from "./../styles/main.module.scss";
 

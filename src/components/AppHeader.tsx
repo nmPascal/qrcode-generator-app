@@ -1,8 +1,9 @@
 import { FC } from 'react';
 
-import styles from './../styles/main.module.scss';
 import ToggleThemeButton from './ToggleThemeButton';
 import TogglePanelButton from './TogglePanelButton';
+
+import styles from './../styles/main.module.scss';
 
 const AppHeader: FC = (): JSX.Element => {
 

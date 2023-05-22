@@ -1,15 +1,15 @@
-import { ReactNode, createContext, useContext, useReducer, useEffect, useState, ChangeEvent, FormEvent } from "react";
+import { ReactNode, createContext, useContext, useReducer, useEffect, useState, ChangeEvent } from "react";
 
 import { checkUrl, generateSettingOptsObj } from "../helpers/CommonHelper";
 import SettingsHelper from "../helpers/SettingsHelper";
 import { storagedSettingsAtom } from "../helpers/AtomHelper";
 
-import { IQRCodeContextProviderProps, ISettingOption, IUrlResponse } from "../interfaces/IQRCodeContextProviderProps";
-
 import { SettingsReducer } from "../reducers/SettingsReducer";
 
-import { useAtom } from "jotai";
+import { IQRCodeContextProviderProps, ISettingOption, IUrlResponse } from "../interfaces/IQRCodeContextProviderProps";
 import { EQRVisionType, ESettingsControlType } from "../interfaces/Enums";
+
+import { useAtom } from "jotai";
 
 const QRCodeContext = createContext<IQRCodeContextProviderProps>({
     selectedTab: "",

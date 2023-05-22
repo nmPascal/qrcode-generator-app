@@ -1,13 +1,13 @@
 import { FC } from "react";
 
 import { useQRCodeContextProvider } from "../../providers/QRCodeContextProvider";
+import SettingsHelper from "../../helpers/SettingsHelper";
 
 import { EQRVisionType } from "../../interfaces/Enums";
 
 import { Divider, Field, Select, Slider } from "@fluentui/react-components";
 
 import styles from "./../../styles/main.module.scss";
-import SettingsHelper from "../../helpers/SettingsHelper";
 
 const QRVisionSettings: FC = (): JSX.Element => {
     const { vision, updateQRVisionSettings } = useQRCodeContextProvider();

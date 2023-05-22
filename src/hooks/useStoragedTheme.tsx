@@ -1,7 +1,10 @@
-import { useAtom } from "jotai";
-import { isDarkThemeAtom } from "../helpers/AtomHelper";
 import { useEffect } from "react";
+
+import { isDarkThemeAtom } from "../helpers/AtomHelper";
+
 import { IStoragedThemeProps } from "../interfaces/IStoragedThemeProps";
+
+import { useAtom } from "jotai";
 
 const useStoragedTheme = (): IStoragedThemeProps => {
     const [isDarkTheme, setIsDarkTheme] = useAtom(isDarkThemeAtom);

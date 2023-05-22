@@ -12,7 +12,6 @@ import PanelContent from "./PanelContent";
 
 import styles from "./../../styles/main.module.scss";
 
-
 const SettingsPanel: FC = (): JSX.Element => {
     const [isPanelOpen] = useAtom(isPanelOpenAtom);
     const { selectedTab, isControlsDisabled, getSettingsTabOptions, setSelectedTab, saveOrResetSettings } = useQRCodeContextProvider();

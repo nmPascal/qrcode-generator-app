@@ -1,8 +1,10 @@
 import { FC } from 'react';
 
-import styles from './../styles/main.module.scss';
-import { useAtom } from 'jotai';
 import { isDarkThemeAtom } from '../helpers/AtomHelper';
+
+import { useAtom } from 'jotai';
+
+import styles from './../styles/main.module.scss';
 
 const ToggleThemeButton: FC = (): JSX.Element => {
     const [isDarkTheme, setIsDarkTheme] = useAtom(isDarkThemeAtom);
