@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+
+/* Colors */
+$colorDark: #333;
+$colorLight: rgba(255, 255, 255, 0.87);
+
+/* Fonts */
+$fontPrimary: "Poppins", sans-serif;
+$fontSecondary: "Josefin Sans", sans-serif;
+$fontTertiary: "Neucha", cursive;
+$fontQuaternary: "Arvo", serif;
+
+/* Font Sizes */
+$fontSizeSmall: 0.8rem;
+$fontSizeMedium: 1rem;
+$fontSizeLarge: 1.2rem;
+$fontSizeXLarge: 1.5rem;
+$fontSizeXXLarge: 2rem;
+
+/* Mixins */
+@mixin gridCenter {
+    display: grid;
+    place-items: center;
+}
+
+@mixin flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fontPrimary;
+    overflow: hidden;
+}

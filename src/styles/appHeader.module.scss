@@ -1,0 +1,8 @@
+.appHeader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    @include flexBetween;
+    padding: 0.5rem;
+    z-index: 1000;
+}
