@@ -122,3 +122,13 @@
         right: -150%;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .settingsPanel {
+        width: 100%;
+
+        .settingsPanel__footer {
+            bottom: 5rem;
+        }
+    }
+}
